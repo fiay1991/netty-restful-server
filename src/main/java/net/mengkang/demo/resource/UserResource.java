@@ -2,12 +2,12 @@ package net.mengkang.demo.resource;
 
 import net.mengkang.demo.bo.UserCreateSuccess;
 import net.mengkang.demo.bo.UserInfo;
+import net.mengkang.demo.service.UserService;
+import net.mengkang.nettyrest.ApiProtocol;
+import net.mengkang.nettyrest.BaseResource;
 import net.mengkang.nettyrest.StatusCode;
 import net.mengkang.nettyrest.response.Info;
 import net.mengkang.nettyrest.response.Result;
-import net.mengkang.nettyrest.ApiProtocol;
-import net.mengkang.demo.service.UserService;
-import net.mengkang.nettyrest.BaseResource;
 
 public class UserResource extends BaseResource {
 

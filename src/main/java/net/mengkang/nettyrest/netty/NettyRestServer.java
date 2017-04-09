@@ -9,8 +9,9 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import net.mengkang.nettyrest.Config;
+import org.springframework.stereotype.Component;
 
-
+@Component
 public final class NettyRestServer {
 
     public void start() {

@@ -1,11 +1,14 @@
 package net.mengkang.nettyrest;
 
+import org.springframework.stereotype.Component;
+
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * Created by zhoumengkang on 7/1/16.
  */
+@Component
 public class StatusCode {
 
     public static final Map<Integer, String> codeMap = new HashMap<>();
@@ -19,6 +22,7 @@ public class StatusCode {
     public static final int VERSION_IS_TOO_LOW    = 1005;
     public static final int REQUEST_MODE_ERROR    = 1006;
     public static final int API_SERVER_ERROR      = 1007;
+    public static final int UNKNOWN_USER      = 2000;
 
     static {
         codeMap.put(CREATED_SUCCESS, "created success");
@@ -30,5 +34,6 @@ public class StatusCode {
         codeMap.put(VERSION_IS_TOO_LOW, "version is too low, please update your client");
         codeMap.put(REQUEST_MODE_ERROR, "the http request method is not allow");
         codeMap.put(API_SERVER_ERROR, "api server error");
+        codeMap.put(UNKNOWN_USER, "unknown user");
     }
 }

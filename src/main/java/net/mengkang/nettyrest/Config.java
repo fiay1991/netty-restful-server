@@ -1,9 +1,12 @@
 package net.mengkang.nettyrest;
 
+import org.springframework.stereotype.Component;
+
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Properties;
 
+@Component
 public class Config {
 
     private static       Properties properties = new Properties();

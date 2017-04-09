@@ -3,7 +3,7 @@
     <api>
         <name>/user/:uid</name>
         <method>get</method>
-        <resource>TUserResource</resource>
+        <resource>UserResource</resource>
         <build>1</build>
     </api>
 </routeMap>

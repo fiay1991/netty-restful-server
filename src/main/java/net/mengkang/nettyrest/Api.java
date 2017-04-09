@@ -1,5 +1,7 @@
 package net.mengkang.nettyrest;
 
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -8,6 +10,7 @@ import java.util.Set;
 /**
  * api mapping object
  */
+@Component
 public class Api {
 
     private String       name;  // endpoint

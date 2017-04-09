@@ -4,6 +4,7 @@ import io.netty.channel.ChannelHandlerContext;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -13,6 +14,7 @@ import java.lang.reflect.Method;
  * connect netty server and api resource
  *
  */
+@Component
 public class ApiHandler {
 
     private static final Logger logger = LoggerFactory.getLogger(ApiHandler.class);

@@ -2,6 +2,7 @@ package net.mengkang.nettyrest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -16,6 +17,7 @@ import java.util.Map;
 /**
  * api route map, read from routeMap.xml
  */
+@Component
 public class ApiRoute {
 
     private static final Logger logger = LoggerFactory.getLogger(ApiRoute.class);

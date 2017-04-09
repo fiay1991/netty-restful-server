@@ -12,6 +12,7 @@ import io.netty.handler.codec.http.multipart.MixedAttribute;
 import io.netty.util.CharsetUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Field;
 import java.net.InetSocketAddress;
@@ -22,6 +23,7 @@ import java.util.regex.Pattern;
 /**
  * convert the netty HttpRequest object to a api protocol object
  */
+@Component
 public class ApiProtocol {
 
     private static final Logger logger = LoggerFactory.getLogger(ApiProtocol.class);

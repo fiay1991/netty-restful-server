@@ -13,11 +13,11 @@ import org.springframework.stereotype.Service;
 @Service("userService")
 public class UserServiceImpl implements IUserService  {
 
-    private IUserDao userDao = (IUserDao) SpringContextUtil.getBean("userDao");
+    private IUserDao userDao = (IUserDao) SpringContextUtil.getBean("IUserDao");
 
     @Override
     public TUser get(Long id) {
         System.out.println("----------- 进入 userService.getId " + id);
-        return userDao.get(id);
+        return userDao.getById(id);
     }
 }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fiay.dao.IUserDao">
+
+    <parameterMap type="com.fiay.entity.TUser" id="parameterMapUser">
+        <parameter property="id"/>
+        <parameter property="username"/>
+        <parameter property="password"/>
+    </parameterMap>
+
+    <resultMap type="com.fiay.entity.TUser" id="resultMapUser">
+        <result property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+    </resultMap>
+
+    <select id="getById" parameterType="Long" resultMap="resultMapUser">
+        SELECT * FROM user
+        WHERE id=#{value}
+    </select>
+
+</mapper>

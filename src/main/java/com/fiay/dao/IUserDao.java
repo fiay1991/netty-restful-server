@@ -7,5 +7,5 @@ import com.fiay.entity.TUser;
  * Created by Fiay on 2017/4/7.
  */
 public interface IUserDao {
-    public TUser get(Long id);
+    TUser getById(Long id);
 }
